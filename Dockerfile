@@ -6,7 +6,7 @@ RUN apk add --update --virtual .build-deps \
 
  && sudo gem install \
         fluent-plugin-secure-forward \
-        fluent-plugin-elasticsearch \
+        fluent-plugin-aws-elasticsearch-service \
 
  && sudo gem sources --clear-all \
  && apk del .build-deps \
